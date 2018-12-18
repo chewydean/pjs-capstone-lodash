@@ -22,7 +22,7 @@ const _ = {
       return false;
     }
     return true;
- 	},
+  },
   
   words(string) {
     return string.split(' ');
