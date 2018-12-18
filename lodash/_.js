@@ -15,8 +15,8 @@ const _ = {
       start = num1;
     }
     if (num1 > num2) {
-        start = num2;
-        end = num1;
+      start = num2;
+      end = num1;
     }
     if (number < start || number >= end) {
       return false;
@@ -38,13 +38,13 @@ const _ = {
   
   has(obj, key) {
     if (!obj[key]) {
-        return false;
+      return false;
     }
     return true;
   },
   
   invert(obj) {
-   let obj2 = {};
+    let obj2 = {};
     for (let key in obj) {
       obj2[obj[key]] = key;
     }
@@ -67,7 +67,7 @@ const _ = {
     return arr.splice(num);
   },
   
-	dropWhile(arr, predicate) {
+  dropWhile(arr, predicate) {
     let dropNumber = arr.findIndex((element, index) => {!predicate(element, index, arr)}) - 1;
     return this.drop(arr, dropNumber);
   },
